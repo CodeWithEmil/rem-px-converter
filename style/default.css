@@ -1,13 +1,23 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic");
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,900);
 
 * {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
 
-   font-family: "Poppins";
+   font-family: "Titillium Web";
+   color: #D8D8D8;
 }
 
 body {
    background-color: #1B1B1B;
+   display: grid;
+   place-items: center;
+}
+
+a {
+   user-select: none;
+   text-decoration: none;
+   color: #D8D8D8;
+   cursor: pointer;
 }
