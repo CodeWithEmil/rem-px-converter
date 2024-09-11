@@ -33,8 +33,8 @@ unitChangerInput.addEventListener("blur", () => {
 
 //Set up code
 function setUp() {
-   pxInput.value = 10;
-   remInput.value = 0.625;
+   pxInput.value = getPx(1);
+   remInput.value = getRem(16);
 }
 
 setUp();
