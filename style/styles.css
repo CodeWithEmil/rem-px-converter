@@ -32,8 +32,8 @@ header {
 }
 
 
-/* Conversor grid */
-.conversor-grid {
+/* Converter grid */
+.converter-grid {
    height: 25%;
    width: max(50vw, 500px);
 
@@ -41,23 +41,23 @@ header {
    grid-template-columns: 3fr 1fr 3fr;
 }
 
-.conversor-grid i {
+.converter-grid i {
    place-self: center;
    color: #363535;
    font-size: 1rem;
 }
 
-.conversor-grid .conversor-grid-item {
+.converter-grid .converter-grid-item {
    display: grid;
    place-items: center;
 }
 
-.conversor-grid .conversor-grid-item p {
+.converter-grid .converter-grid-item p {
    font-size: 1.2rem;
    font-weight: 400;
 }
 
-.conversor-grid .conversor-grid-item div {
+.converter-grid .converter-grid-item div {
    height: 4rem;
    width: 100%;
    
@@ -67,7 +67,7 @@ header {
    align-items: center;
 }
 
-.conversor-grid .conversor-grid-item div input {
+.converter-grid .converter-grid-item div input {
    height: 100%;
    width: 100%;
    
@@ -76,7 +76,8 @@ header {
    font-weight: 600;
 }
 
-.conversor-grid .conversor-grid-item div span {
+.converter-grid .converter-grid-item div span {
+   user-select: none;
    position: absolute;
    margin-right: 1.2rem;
 
@@ -85,14 +86,29 @@ header {
    font-weight: 500;
 }
 
-.conversor-input {
+.converter-input {
    background-color: transparent;
    border: solid #363535 2px;
    outline: none;
 }
 
-.conversor-input-alt {
+.converter-input-alt {
    color: #1C90FF;
+   animation: alt-input-animation 0.4s ease-out;
+}
+
+@keyframes alt-input-animation {
+   0% {
+      border: solid #363535 2px;
+   }
+
+   50% {
+      border: solid #1C90FF 2px;
+   }
+
+   100% {
+      border: solid #363535 2px;
+   }
 }
 
 

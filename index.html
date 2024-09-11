@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
-      <title>Conversor: PX to REM</title>
+      <title>Converter: PX to REM</title>
 
       <!--Stylesheets-->
       <link rel="stylesheet" href="/style/default.css">
@@ -15,25 +15,25 @@
    <body>
 
       <header>
-         <a href=""><h2>Conversor</h2></a>
+         <a href=""><h2>converter</h2></a>
       </header>
 
       <div class="main">
-         <p class="title">PX to REM converter</p>
+         <p class="title">PX to REM Converter</p>
 
-         <div class="conversor-grid">
-            <div class="conversor-grid-item">
+         <div class="converter-grid">
+            <div class="converter-grid-item">
                <p>Pixels</p>
                <div>
-                  <input class="conversor-input">
+                  <input class="converter-input js-px-input">
                   <span class="unit">px</span>
                </div>
             </div>
             <i class="fa-solid fa-arrow-right-arrow-left"></i>
-            <div class="conversor-grid-item">
+            <div class="converter-grid-item">
                <p>REM</p>
                <div>
-                  <input class="conversor-input conversor-input-alt">
+                  <input class="converter-input js-rem-input converter-input-alt">
                   <span class="unit">rem</span>
                </div>
             </div>
@@ -41,7 +41,7 @@
 
          <p class="unit-changer">
             Calculation based on a root font-size of 
-               <input class = "unit-changer-input"><i class="fa-solid fa-pencil"></i>
+               <input class = "unit-changer-input js-unit-changer-input"><i class="fa-solid fa-pencil"></i>
             pixels
          </p>
 
@@ -59,8 +59,7 @@
       </div>
 
       <!--Script elements-->
-      <script src="/scripts/index.js"></script>
-      <script src="/scripts/styles.js"></script>
+      <script src="/scripts/index.js" type="module"></script>
       <script src="https://kit.fontawesome.com/b1a0b78bd7.js" crossorigin="anonymous"></script>
    </body>
 </html>
