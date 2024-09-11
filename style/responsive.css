@@ -1,10 +1,14 @@
 @media (max-width: 600px) {
    .main {
       height: 70vh;
+      width: 90vw;
+      margin-top: 1rem;
+      text-align: center;
    }
 
    .converter-grid {
       height: 60%;
+      width: 80vw;
       padding: 1rem 3rem;
 
       display: grid;
