@@ -26,19 +26,19 @@
       <div class="main">
          <p class="title">PX to REM Converter</p>
 
-         <div class="converter-grid">
-            <div class="converter-grid-item">
+         <div class="converter-grid converter-grid-first-arrangement">
+            <div class="converter-grid-item px-input-div">
                <p>Pixels</p>
                <div>
-                  <input class="converter-input js-px-input">
+                  <input class="converter-input js-px-input" type="number">
                   <span class="unit">px</span>
                </div>
             </div>
-            <i class="fa-solid fa-arrow-right-arrow-left"></i>
-            <div class="converter-grid-item">
+            <i class="fa-solid fa-arrow-right-arrow-left js-exchange-input"></i>
+            <div class="converter-grid-item rem-input-div">
                <p>REM</p>
                <div>
-                  <input class="converter-input js-rem-input converter-input-alt">
+                  <input class="converter-input js-rem-input converter-input-alt" type="number">
                   <span class="unit">rem</span>
                </div>
             </div>
@@ -46,7 +46,8 @@
 
          <p class="unit-changer">
             Calculation based on a root font-size of 
-               <input class = "unit-changer-input js-unit-changer-input"><i class="fa-solid fa-pencil"></i>
+               <input class = "unit-changer-input js-unit-changer-input"type="number">
+               <i class="fa-solid fa-pencil"></i>
             pixels
          </p>
 

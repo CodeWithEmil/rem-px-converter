@@ -15,4 +15,18 @@
       grid-template-columns: none;
       grid-template-rows: repeat(3, 1fr);
    }
+
+   .converter-grid-first-arrangement {
+      grid-template-areas: 
+         "px-input" 
+         "icon-input"
+         "rem-input";
+   }
+
+   .converter-grid-second-arrangement {
+      grid-template-areas:
+         "rem-input"
+         "icon-input"
+         "px-input";
+   }
 }

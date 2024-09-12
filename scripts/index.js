@@ -2,9 +2,13 @@
 import {getRem, getPx} from "./math.js";
 
 //Getting HTML elements
+const converterGrid = document.querySelector(".converter-grid");
+const titleText = document.querySelector(".title");
+
 const unitChangerInput = document.querySelector(".js-unit-changer-input");
 const pencilIcon = document.querySelector(".fa-pencil");
 
+const exchangeInput = document.querySelector(".js-exchange-input");
 const pxInput = document.querySelector(".js-px-input");
 const remInput = document.querySelector(".js-rem-input");
 
@@ -18,6 +22,17 @@ unitChangerInput.addEventListener("focus", () => {
 unitChangerInput.addEventListener("blur", () => {
    pencilIcon.style.display = "inline";
 });
+
+exchangeInput.addEventListener("click", () => {
+   if (titleText.innerHTML === "PX to REM Converter") {
+      titleText.innerHTML = "REM to PX Converter";
+   } else {
+      titleText.innerHTML = "PX to REM Converter";
+   }
+
+   converterGrid.classList.toggle("converter-grid-first-arrangement");
+   converterGrid.classList.toggle("converter-grid-second-arrangement");
+})
 
 
 //* JavaScript
