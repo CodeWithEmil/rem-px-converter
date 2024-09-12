@@ -26,8 +26,10 @@ unitChangerInput.addEventListener("blur", () => {
 exchangeInput.addEventListener("click", () => {
    if (titleText.innerHTML === "PX to REM Converter") {
       titleText.innerHTML = "REM to PX Converter";
+      document.querySelector("title").innerHTML = "REM to PX Converter";
    } else {
       titleText.innerHTML = "PX to REM Converter";
+      document.querySelector("title").innerHTML = "PX to REM Converter";
    }
 
    converterGrid.classList.toggle("converter-grid-first-arrangement");
