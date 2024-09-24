@@ -16,6 +16,10 @@
       grid-template-rows: repeat(3, 1fr);
    }
 
+   .converter-grid i {
+      transform: rotate(90deg);
+   }
+
    .converter-grid-first-arrangement {
       grid-template-areas: 
          "px-input" 

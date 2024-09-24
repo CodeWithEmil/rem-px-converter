@@ -58,6 +58,8 @@ header {
    
    place-self: center;
    grid-area: icon-input;
+
+   transition: transform 0.3s ease-in-out;
 }
 
 .px-input-div {

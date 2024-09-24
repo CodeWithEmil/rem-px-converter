@@ -24,6 +24,10 @@ unitChangerInput.addEventListener("blur", () => {
 });
 
 exchangeInput.addEventListener("click", () => {
+   const rotationValue = window.matchMedia("(max-width: 600px)").matches ? 90 : 0;
+   exchangeInput.style.transform = `rotate(${
+      (parseInt(exchangeInput.style.transform.replace('rotate(', '').replace('deg)', '')) || rotationValue) + 180}deg)`;
+
    if (titleText.innerHTML === "PX to REM Converter") {
       titleText.innerHTML = "REM to PX Converter";
       document.querySelector("title").innerHTML = "REM to PX Converter";
